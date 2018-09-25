@@ -106,12 +106,12 @@ $(function() {
           beforeEach(function(done){
             //Load feedOne
             loadFeed(0, function() {
-              feedOne = document.querySelector('.entry').innerText;
+              feedOne = document.querySelector('.feed').innerHTML;
               //Verify feedOne content
               console.log(feedOne);
               //Load feedTwo
               loadFeed(1, function() {
-                feedTwo = document.querySelector('.entry').innerText;
+                feedTwo = document.querySelector('.feed').innerHTML;
                 //Verify feedTwo content
                 console.log(feedTwo);
                // After feedOne and feedTwo are loaded, it is time for testing
