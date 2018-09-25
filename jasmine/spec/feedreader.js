@@ -88,7 +88,6 @@ $(function() {
         it('completes load feed', function(){
           const feed = document.querySelectorAll('.feed .entry');
           //Verify feed contains at least one .entry element
-          console.log(feed);
           expect(feed.length).toBeGreaterThan(0);
         });
 
@@ -107,14 +106,11 @@ $(function() {
             //Load feedOne
             loadFeed(0, function() {
               feedOne = document.querySelector('.feed').innerHTML;
-              //Verify feedOne content
-              console.log(feedOne);
-              //Load feedTwo
+              
+            //Load feedTwo
               loadFeed(1, function() {
                 feedTwo = document.querySelector('.feed').innerHTML;
-                //Verify feedTwo content
-                console.log(feedTwo);
-               // After feedOne and feedTwo are loaded, it is time for testing
+                // After feedOne and feedTwo are loaded, it is time for testing
                 done();
             });
 
