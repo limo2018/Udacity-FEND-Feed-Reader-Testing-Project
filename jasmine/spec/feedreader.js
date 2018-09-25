@@ -65,7 +65,7 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-       
+       //Check the menu is hidden by defaul
       it('menu is hidden by default', function() {
         const body = document.querySelector('body');
         expect(body.classList.contains('menu-hidden')).toBe(true);
